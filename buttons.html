@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Framework" />
+    <meta name="author" content="Damian Komoński">
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar--logo">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+      </div>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Framework</p>
+        <ul>
+          <li><a href="index.html"><i class="icon-calendar"></i> Dashboard</a></li>
+          <li class="dropdown show"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-layers"></i> Components</a>
+
+            <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="alerts.html">Alerts</a>
+              <a class="dropdown-item" href="badge.html">Badge</a>
+              <a class="dropdown-item active" href="buttons.html">Button</a>
+              <a class="dropdown-item" href="cards.html">Card</a>
+              <a class="dropdown-item" href="colors.html">Color</a>
+              <a class="dropdown-item" href="grid.html">Grid</a>
+              <a class="dropdown-item" href="icons.html">Icon</a>
+              <a class="dropdown-item" href="list.html">List</a>
+              <a class="dropdown-item" href="navbar.html">Navbar</a>
+              <a class="dropdown-item" href="tab_collapse.html">Tab, Collapse</a>
+            </div>
+          </li>
+          <li><a href="form.html"><i class="icon-list"></i> Form</a></li>
+          <li><a href="table.html"><i class="icon-calendar"></i> Table</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Extras</p>
+        <ul>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-docs"></i> Pages</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="404.html">Error 404</a>
+              <a class="dropdown-item" href="505.html">Error 505</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-lock"></i> Authentication</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="sign_in.html">Sign in</a>
+              <a class="dropdown-item" href="create_account.html">Create account</a>
+              <a class="dropdown-item" href="forgot_password.html">Forgot password</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="sidebar--footer">
+        <p class="sidebar--footer--copyright">Damian Komoński &copy; Copyright 2019</p>
+      </footer>
+    </div>
+
+    <main class="content">
+      <div class="content--toggleSidebar">
+        <a href="#" id="sidebarCollapse" class="btn btn-sm btn-grey"><i class="icon-menu"></i> Toggle left sidebar</a>
+      </div>
+
+      <div class="content--title">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="content--title--left">
+              <h4>Buttons</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="content--title--right">
+              <ul class="content--title--right--breadcrumb">
+                <li class="active"><a href="#">Buttons</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content--main">
+        <div class="row">
+          <div class="col-xl-12">
+
+            <div class="content--main--wrapper">
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Color</h6>
+
+                  <button class="btn btn-primary btn-md">Primary</button>
+                  <button class="btn btn-secondary btn-md">Secondary</button>
+                  <button class="btn btn-dark btn-md">Dark</button>
+                  <button class="btn btn-grey btn-md">Grey</button>
+                  <button class="btn btn-success btn-md">Success</button>
+                  <button class="btn btn-warning btn-md">Warning</button>
+                  <button class="btn btn-danger btn-md">Danger</button>
+                </div>
+              </div>
+
+              <div class="space"></div>
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Light color</h6>
+
+                  <button class="btn btn-primary-light btn-md">Primary</button>
+                  <button class="btn btn-secondary-light btn-md">Secondary</button>
+                  <button class="btn btn-dark-light btn-md">Dark</button>
+                  <button class="btn btn-grey-light btn-md">Grey</button>
+                  <button class="btn btn-success-light btn-md">Success</button>
+                  <button class="btn btn-warning-light btn-md">Warning</button>
+                  <button class="btn btn-danger-light btn-md">Danger</button>
+                </div>
+              </div>
+
+              <div class="space"></div>
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Size</h6>
+
+                  <button class="btn btn-primary btn-xs">X-Small</button>
+                  <button class="btn btn-primary btn-sm">Small</button>
+                  <button class="btn btn-primary btn-md">Medium</button>
+                  <button class="btn btn-primary btn-lg">Large</button>
+                </div>
+              </div>
+
+              <div class="space"></div>
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Rounded</h6>
+
+                  <button class="btn btn-primary btn-rounded btn-md">Primary</button>
+                  <button class="btn btn-secondary btn-rounded btn-md">Secondary</button>
+                  <button class="btn btn-dark btn-rounded btn-md">Dark</button>
+                  <button class="btn btn-grey btn-rounded btn-md">Grey</button>
+                  <button class="btn btn-success btn-rounded btn-md">Success</button>
+                  <button class="btn btn-warning btn-rounded btn-md">Warning</button>
+                  <button class="btn btn-danger btn-rounded btn-md">Danger</button>
+                </div>
+              </div>
+
+              <div class="space"></div>
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Outline</h6>
+
+                  <button class="btn btn-primary-outline btn-rounded btn-md">Primary</button>
+                  <button class="btn btn-secondary-outline btn-rounded btn-md">Secondary</button>
+                  <button class="btn btn-dark-outline btn-rounded btn-md">Dark</button>
+                  <button class="btn btn-grey-outline btn-rounded btn-md">Grey</button>
+                  <button class="btn btn-success-outline btn-rounded btn-md">Success</button>
+                  <button class="btn btn-warning-outline btn-rounded btn-md">Warning</button>
+                  <button class="btn btn-danger-outline btn-rounded btn-md">Danger</button>
+                </div>
+              </div>
+
+              <div class="space"></div>
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Icon</h6>
+
+                  <button class="btn btn-primary btn-lg-icon"><i class="icon-user"></i></button>
+                  <button class="btn btn-secondary btn-md-icon"><i class="icon-call-end"></i></button>
+                  <button class="btn btn-danger btn-sm-icon"><i class="icon-user"></i></button>
+                  <button class="btn btn-warning btn-xs-icon"><i class="icon-call-end"></i></button>
+                </div>
+              </div>
+
+              <div class="space"></div>
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Pagination</h6>
+
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="space"></div>
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Dropdown</h6>
+
+                  <div class="dropdown">
+                    <button class="btn-primary btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Example text</a>
+                      <a class="dropdown-item" href="#">Example text</a>
+                      <a class="dropdown-item" href="#">Example text</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Usunąć <strong>1A</strong>?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-md btn-danger">Tak, usuwam</button>
+          <button type="button" class="btn-md btn-grey" data-dismiss="modal">Anuluj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

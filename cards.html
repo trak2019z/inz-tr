@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Framework" />
+    <meta name="author" content="Damian Komoński">
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar--logo">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+      </div>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Framework</p>
+        <ul>
+          <li><a href="index.html"><i class="icon-calendar"></i> Dashboard</a></li>
+          <li class="dropdown show"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-layers"></i> Components</a>
+
+            <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="alerts.html">Alerts</a>
+              <a class="dropdown-item" href="badge.html">Badge</a>
+              <a class="dropdown-item" href="buttons.html">Button</a>
+              <a class="dropdown-item active" href="cards.html">Card</a>
+              <a class="dropdown-item" href="colors.html">Color</a>
+              <a class="dropdown-item" href="grid.html">Grid</a>
+              <a class="dropdown-item" href="icons.html">Icon</a>
+              <a class="dropdown-item" href="list.html">List</a>
+              <a class="dropdown-item" href="navbar.html">Navbar</a>
+              <a class="dropdown-item" href="tab_collapse.html">Tab, Collapse</a>
+            </div>
+          </li>
+          <li><a href="form.html"><i class="icon-list"></i> Form</a></li>
+          <li><a href="table.html"><i class="icon-calendar"></i> Table</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Extras</p>
+        <ul>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-docs"></i> Pages</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="404.html">Error 404</a>
+              <a class="dropdown-item" href="505.html">Error 505</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-lock"></i> Authentication</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="sign_in.html">Sign in</a>
+              <a class="dropdown-item" href="create_account.html">Create account</a>
+              <a class="dropdown-item" href="forgot_password.html">Forgot password</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="sidebar--footer">
+        <p class="sidebar--footer--copyright">Damian Komoński &copy; Copyright 2019</p>
+      </footer>
+    </div>
+
+    <main class="content">
+      <div class="content--toggleSidebar">
+        <a href="#" id="sidebarCollapse" class="btn btn-sm btn-grey"><i class="icon-menu"></i> Toggle left sidebar</a>
+      </div>
+
+      <div class="content--title">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="content--title--left">
+              <h4>Card</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="content--title--right">
+              <ul class="content--title--right--breadcrumb">
+                <li class="active"><a href="#">Card</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content--main">
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="component--card">
+              <img src="" alt="">
+              <div class="component--card--content">
+                <h3><a href="">Card title</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <time>2 days ago</time>
+                <a href="#" class="btn-primary btn-md">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4">
+            <div class="component--card">
+              <img src="" alt="">
+              <div class="component--card--content">
+                <h3><a href="">Card title</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <time>2 days ago</time>
+                <a href="#" class="btn-primary btn-md">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4">
+            <div class="component--card">
+              <img src="" alt="">
+              <div class="component--card--content">
+                <h3><a href="">Card title</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <time>2 days ago</time>
+                <a href="#" class="btn-primary btn-md">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4">
+            <div class="component--card">
+              <div class="component--card--content">
+                <h3><a href="">Card title</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <time>2 days ago</time>
+                <a href="#" class="btn-primary btn-md">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4">
+            <div class="component--card">
+              <div class="component--card--content">
+                <h3><a href="">Card title</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <time>2 days ago</time>
+                <a href="#" class="btn-primary btn-md">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Usunąć <strong>1A</strong>?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-md btn-danger">Tak, usuwam</button>
+          <button type="button" class="btn-md btn-grey" data-dismiss="modal">Anuluj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

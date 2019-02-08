@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Framework" />
+    <meta name="author" content="Damian Komoński">
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar--logo">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+      </div>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Framework</p>
+        <ul>
+          <li class="active"><a href="index.html"><i class="icon-calendar"></i> Dashboard</a></li>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-layers"></i> Components</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="alerts.html">Alerts</a>
+              <a class="dropdown-item" href="badge.html">Badge</a>
+              <a class="dropdown-item" href="buttons.html">Button</a>
+              <a class="dropdown-item" href="cards.html">Card</a>
+              <a class="dropdown-item" href="colors.html">Color</a>
+              <a class="dropdown-item" href="grid.html">Grid</a>
+              <a class="dropdown-item" href="icons.html">Icon</a>
+              <a class="dropdown-item" href="list.html">List</a>
+              <a class="dropdown-item" href="navbar.html">Navbar</a>
+              <a class="dropdown-item" href="tab_collapse.html">Tab, Collapse</a>
+            </div>
+          </li>
+          <li><a href="form.html"><i class="icon-list"></i> Form</a></li>
+          <li><a href="table.html"><i class="icon-calendar"></i> Table</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Extras</p>
+        <ul>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-docs"></i> Pages</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="404.html">Error 404</a>
+              <a class="dropdown-item" href="505.html">Error 505</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-lock"></i> Authentication</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="sign_in.html">Sign in</a>
+              <a class="dropdown-item" href="create_account.html">Create account</a>
+              <a class="dropdown-item" href="forgot_password.html">Forgot password</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="sidebar--footer">
+        <p class="sidebar--footer--copyright">Damian Komoński &copy; Copyright 2019</p>
+      </footer>
+    </div>
+
+    <main class="content">
+      <div class="content--toggleSidebar">
+        <a href="#" id="sidebarCollapse" class="btn btn-sm btn-grey"><i class="icon-menu"></i> Toggle left sidebar</a>
+      </div>
+
+      <div class="content--title">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="content--title--left">
+              <h4>Dashboard</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="content--title--right">
+              <ul class="content--title--right--breadcrumb">
+                <li class="active"><a href="#">Dashboard</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content--main">
+        <div class="row">
+          <div class="col-xl-12">
+
+            <div class="content--main--wrapper">
+              <div class="row">
+                <div class="col-xl-6">
+                  <h6 class="content--main--wrapper--title">Headings</h6>
+
+                  <h1>H1 heading title 42px</h1>
+                  <h2>H2 heading title 36px</h2>
+                  <h3>H3 heading title 30px</h3>
+                  <h4>H4 heading title 24px</h4>
+                  <h5>H5 heading title 20px</h5>
+                  <h6>H6 heading title 16px</h6>
+                </div>
+
+                <div class="col-xl-6">
+                  <h6 class="content--main--wrapper--title">Paragraph, links, disabled link</h6>
+
+                  <p>15px default, Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, <a href="" class="disabled">ed do eiusmod tempor</a> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class=""><del>Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</del></p>
+                </div>
+              </div>
+
+              <div class="space-xl"></div>
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <h6 class="content--main--wrapper--title">Blockquote</h6>
+
+                  <blockquote class="blockquote">
+                    <p>15px default, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <footer class="blockquote-footer">by Adam Kowalski in <cite title="Source Title">Los Angeles</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+
+              <div class="space-xl"></div>
+
+              <div class="row">
+                <div class="col-xl-6">
+                  <h6 class="content--main--wrapper--title">Breadcrumb</h6>
+
+                  <div class="component--breadcrumb">
+                    <ul class="content--title--right--breadcrumb">
+                      <li><a href="#">Dashboard</a></li>
+                      <li><a href="">Alerts</a></li>
+                      <li class="active"><a href="">Inside</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-xl-6">
+                  <h6 class="content--main--wrapper--title">Aligning</h6>
+                    <p class="text-left">Left aligned text.</p>
+                    <p class="text-center">Center aligned text.</p>
+                    <p class="text-right">Right aligned text.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xl-6">
+                  <h6 class="content--main--wrapper--title">Text transform</h6>
+
+                  <p class="text-lowercase">Lowercased text.</p>
+                  <p class="text-uppercase">Uppercased text.</p>
+                  <p class="text-capitalize">CapiTaliZed text.</p>
+                </div>
+
+                <div class="col-xl-6">
+                  <h6 class="content--main--wrapper--title">Font weight, italic</h6>
+                  <p class="font-weight-bold">Bold text.</p>
+                  <p class="font-weight-normal">Normal weight text.</p>
+                  <p class="font-weight-light">Light weight text.</p>
+                  <p class="font-italic">Italic text.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Usunąć <strong>1A</strong>?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-md btn-danger">Tak, usuwam</button>
+          <button type="button" class="btn-md btn-grey" data-dismiss="modal">Anuluj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

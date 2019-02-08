@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Framework" />
+    <meta name="author" content="Damian Komoński">
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar--logo">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+      </div>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Framework</p>
+        <ul>
+          <li><a href="index.html"><i class="icon-calendar"></i> Dashboard</a></li>
+          <li class="dropdown show"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-layers"></i> Components</a>
+
+            <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="alerts.html">Alerts</a>
+              <a class="dropdown-item active" href="badge.html">Badge</a>
+              <a class="dropdown-item" href="buttons.html">Button</a>
+              <a class="dropdown-item" href="cards.html">Card</a>
+              <a class="dropdown-item" href="colors.html">Color</a>
+              <a class="dropdown-item" href="grid.html">Grid</a>
+              <a class="dropdown-item" href="icons.html">Icon</a>
+              <a class="dropdown-item" href="list.html">List</a>
+              <a class="dropdown-item" href="navbar.html">Navbar</a>
+              <a class="dropdown-item" href="tab_collapse.html">Tab, Collapse</a>
+            </div>
+          </li>
+          <li><a href="form.html"><i class="icon-list"></i> Form</a></li>
+          <li><a href="table.html"><i class="icon-calendar"></i> Table</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Extras</p>
+        <ul>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-docs"></i> Pages</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="404.html">Error 404</a>
+              <a class="dropdown-item" href="505.html">Error 505</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-lock"></i> Authentication</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="sign_in.html">Sign in</a>
+              <a class="dropdown-item" href="create_account.html">Create account</a>
+              <a class="dropdown-item" href="forgot_password.html">Forgot password</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="sidebar--footer">
+        <p class="sidebar--footer--copyright">Damian Komoński &copy; Copyright 2019</p>
+      </footer>
+    </div>
+
+    <main class="content">
+      <div class="content--toggleSidebar">
+        <a href="#" id="sidebarCollapse" class="btn btn-sm btn-grey"><i class="icon-menu"></i> Toggle left sidebar</a>
+      </div>
+
+      <div class="content--title">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="content--title--left">
+              <h4>Badge</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="content--title--right">
+              <ul class="content--title--right--breadcrumb">
+                <li class="active"><a href="#">Badge</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content--main">
+        <div class="row">
+          <div class="col-xl-12">
+
+            <h6 class="content--main--wrapper--title">Primary</h6>
+            <div class="component--table">
+
+                <table class="table-responsive">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="badge badge-primary">Primary</span>
+                      </td>
+                      <td>Primary</td>
+                      <td><code>.badge-primary</code></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge badge-secondary">Secondary</span>
+                      </td>
+                      <td>Secondary</td>
+                      <td><code>.badge-secondary</code></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge badge-dark">Dark</span>
+                      </td>
+                      <td>Dark</td>
+                      <td><code>.badge-dark</code></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge badge-grey">Grey</span>
+                      </td>
+                      <td>Grey</td>
+                      <td><code>.badge-grey</code></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge badge-success">Success</span>
+                      </td>
+                      <td>Success</td>
+                      <td><code>.badge-success</code></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge badge-warning">Warning</span>
+                      </td>
+                      <td>Warning</td>
+                      <td><code>.badge-warning</code></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge badge-danger">Danger</span>
+                      </td>
+                      <td>Danger</td>
+                      <td><code>.badge-danger</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+            </div>
+
+            <div class="space-xl"></div>
+
+            <h6 class="content--main--wrapper--title">Light</h6>
+            <div class="component--table">
+              <table class="table-responsive">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="badge badge-primary-light">Primary</span>
+                    </td>
+                    <td>Primary Light</td>
+                    <td><code>.badge-primary-light</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-secondary-light">Secondary</span>
+                    </td>
+                    <td>Secondary Light</td>
+                    <td><code>.badge-secondary-light</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-dark-light">Dark</span>
+                    </td>
+                    <td>Dark Light</td>
+                    <td><code>.badge-dark-light</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-grey-light">Grey</span>
+                    </td>
+                    <td>Grey Light</td>
+                    <td><code>.badge-grey-light</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-success-light">Success</span>
+                    </td>
+                    <td>Success Light</td>
+                    <td><code>.badge-success-light</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-warning-light">Warning</span>
+                    </td>
+                    <td>Warning Light</td>
+                    <td><code>.badge-warning-light</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-danger-light">Danger</span>
+                    </td>
+                    <td>Danger Light</td>
+                    <td><code>.badge-danger-light</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="space-xl"></div>
+
+            <h6 class="content--main--wrapper--title">Outline</h6>
+            <div class="component--table">
+              <table class="table-responsive">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="badge badge-primary-outline">Primary</span>
+                    </td>
+                    <td>Primary</td>
+                    <td><code>.badge-primary-outline</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-secondary-outline">Secondary</span>
+                    </td>
+                    <td>Secondary</td>
+                    <td><code>.badge-secondary-outline</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-dark-outline">Dark</span>
+                    </td>
+                    <td>Dark</td>
+                    <td><code>.badge-dark-outline</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-grey-outline">Grey</span>
+                    </td>
+                    <td>Grey</td>
+                    <td><code>.badge-grey-outline</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-success-outline">Success</span>
+                    </td>
+                    <td>Success</td>
+                    <td><code>.badge-success-outline</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-warning-outline">Warning</span>
+                    </td>
+                    <td>Warning</td>
+                    <td><code>.badge-warning-outline</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="badge badge-danger-outline">Danger</span>
+                    </td>
+                    <td>Danger</td>
+                    <td><code>.badge-danger-outline</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Usunąć <strong>1A</strong>?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-md btn-danger">Tak, usuwam</button>
+          <button type="button" class="btn-md btn-grey" data-dismiss="modal">Anuluj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

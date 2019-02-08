@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Framework" />
+    <meta name="author" content="Damian Komoński">
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar--logo">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+      </div>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Framework</p>
+        <ul>
+          <li><a href="index.html"><i class="icon-calendar"></i> Dashboard</a></li>
+          <li class="dropdown show"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-layers"></i> Components</a>
+
+            <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="alerts.html">Alerts</a>
+              <a class="dropdown-item" href="badge.html">Badge</a>
+              <a class="dropdown-item" href="buttons.html">Button</a>
+              <a class="dropdown-item" href="cards.html">Card</a>
+              <a class="dropdown-item" href="colors.html">Color</a>
+              <a class="dropdown-item" href="grid.html">Grid</a>
+              <a class="dropdown-item active" href="icons.html">Icon</a>
+              <a class="dropdown-item" href="list.html">List</a>
+              <a class="dropdown-item" href="navbar.html">Navbar</a>
+              <a class="dropdown-item" href="tab_collapse.html">Tab, Collapse</a>
+            </div>
+          </li>
+          <li><a href="form.html"><i class="icon-list"></i> Form</a></li>
+          <li><a href="table.html"><i class="icon-calendar"></i> Table</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar--nav">
+        <p class="sidebar--nav--title">Extras</p>
+        <ul>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-docs"></i> Pages</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="404.html">Error 404</a>
+              <a class="dropdown-item" href="505.html">Error 505</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="icon-lock"></i> Authentication</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="sign_in.html">Sign in</a>
+              <a class="dropdown-item" href="create_account.html">Create account</a>
+              <a class="dropdown-item" href="forgot_password.html">Forgot password</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="sidebar--footer">
+        <p class="sidebar--footer--copyright">Damian Komoński &copy; Copyright 2019</p>
+      </footer>
+    </div>
+
+    <main class="content">
+      <div class="content--toggleSidebar">
+        <a href="#" id="sidebarCollapse" class="btn btn-sm btn-grey"><i class="icon-menu"></i> Toggle left sidebar</a>
+      </div>
+
+      <div class="content--title">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="content--title--left">
+              <h4>Icon</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="content--title--right">
+              <ul class="content--title--right--breadcrumb">
+                <li class="active"><a href="#">Icon</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content--main">
+        <div class="row">
+          <div class="col-xl-12">
+
+            <div class="content--main--wrapper">
+              <div class="row">
+                <div class="col-xl-3">
+                  <div class="component--icons">
+
+                    <p><i class="icon-user-female"></i> icon-user-female</p>
+                    <p><i class="icon-people"></i> icon-people</p>
+                    <p><i class="icon-user-follow"></i> icon-user-follow</p>
+                    <p><i class="icon-user-following"></i> icon-user-following</p>
+                    <p><i class="icon-user-unfollow"></i> icon-user-unfollow</p>
+                    <p><i class="icon-login"></i> icon-login</p>
+                    <p><i class="icon-logout"></i> icon-logout</p>
+                    <p><i class="icon-emotsmile"></i> icon-emotsmile</p>
+                    <p><i class="icon-phone"></i> icon-phone</p>
+                    <p><i class="icon-call-end"></i> icon-call-end</p>
+                    <p><i class="icon-call-in"></i> icon-call-in</p>
+                    <p><i class="icon-call-out"></i> icon-call-out</p>
+                    <p><i class="icon-map"></i> icon-map</p>
+                    <p><i class="icon-location-pin"></i> icon-location-pin</p>
+                    <p><i class="icon-direction"></i> icon-direction</p>
+                    <p><i class="icon-directions"></i> icon-directions</p>
+                    <p><i class="icon-compass"></i> icon-compass</p>
+                    <p><i class="icon-layers"></i> icon-layers</p>
+                    <p><i class="icon-menu"></i> icon-menu</p>
+                    <p><i class="icon-list"></i> icon-list</p>
+                    <p><i class="icon-options-vertical"></i> icon-options-vertical</p>
+                    <p><i class="icon-options"></i> icon-options</p>
+                    <p><i class="icon-arrow-down"></i> icon-arrow-down</p>
+                    <p><i class="icon-arrow-left"></i> icon-arrow-left</p>
+                    <p><i class="icon-arrow-right"></i> icon-arrow-right</p>
+                    <p><i class="icon-arrow-up"></i> icon-arrow-up</p>
+                    <p><i class="icon-arrow-up-circle"></i> icon-arrow-up-circle</p>
+                    <p><i class="icon-arrow-left-circle"></i> icon-arrow-left-circle</p>
+                    <p><i class="icon-arrow-right-circle"></i> icon-arrow-right-circle</p>
+                    <p><i class="icon-arrow-down-circle"></i> icon-arrow-down-circle</p>
+                    <p><i class="icon-check"></i> icon-check</p>
+                    <p><i class="icon-clock"></i> icon-clock</p>
+                    <p><i class="icon-event"></i> icon-event</p>
+                    <p><i class="icon-exclamation"></i> icon-exclamation</p>
+                    <p><i class="icon-organization"></i> icon-organization</p>
+                    <p><i class="icon-trophy"></i> icon-trophy</p>
+                    <p><i class="icon-screen-smartphone"></i> icon-screen-smartphone</p>
+                    <p><i class="icon-screen-desktop"></i> icon-screen-desktop</p>
+                    <p><i class="icon-plane"></i> icon-plane</p>
+                    <p><i class="icon-notebook"></i> icon-notebook</p>
+                    <p><i class="icon-mustache"></i> icon-mustache</p>
+                    <p><i class="icon-mouse"></i> icon-mouse</p>
+                    <p><i class="icon-magnet"></i> icon-magnet</p>
+                    <p><i class="icon-energy"></i> icon-energy</p>
+                    <p><i class="icon-disc"></i> icon-disc</p>
+                    <p><i class="icon-cursor"></i> icon-cursor</p>
+
+
+
+
+
+
+
+
+
+                  </div>
+                </div>
+
+                <div class="col-xl-3">
+                  <div class="component--icons">
+                    <p><i class="icon-screen-tablet"></i> icon-screen-tablet</p>
+                    <p><i class="icon-magic-wand"></i> icon-magic-wand</p>
+                    <p><i class="icon-hourglass"></i> icon-hourglass</p>
+                    <p><i class="icon-graduation"></i> icon-graduation</p>
+                    <p><i class="icon-ghost"></i> icon-ghost</p>
+                    <p><i class="icon-game-controller"></i> icon-game-controller</p>
+                    <p><i class="icon-fire"></i> icon-fire</p>
+                    <p><i class="icon-eyeglass"></i> icon-eyeglass</p>
+                    <p><i class="icon-envelope-open"></i> icon-envelope-open</p>
+                    <p><i class="icon-envelope-letter"></i> icon-envelope-letter</p>
+                    <p><i class="icon-bell"></i> icon-bell</p>
+                    <p><i class="icon-badge"></i> icon-badge</p>
+                    <p><i class="icon-anchor"></i> icon-anchor</p>
+                    <p><i class="icon-wallet"></i> icon-wallet</p>
+                    <p><i class="icon-vector"></i> icon-vector</p>
+                    <p><i class="icon-speech"></i> icon-speech</p>
+                    <p><i class="icon-puzzle"></i> icon-puzzle</p>
+                    <p><i class="icon-printer"></i> icon-printer</p>
+                    <p><i class="icon-present"></i> icon-present</p>
+                    <p><i class="icon-playlist"></i> icon-playlist</p>
+                    <p><i class="icon-pin"></i> icon-pin</p>
+                    <p><i class="icon-picture"></i> icon-picture</p>
+                    <p><i class="icon-handbag"></i> icon-handbag</p>
+                    <p><i class="icon-globe-alt"></i> icon-globe-alt</p>
+                    <p><i class="icon-globe"></i> icon-globe</p>
+                    <p><i class="icon-folder-alt"></i> icon-folder-alt</p>
+                    <p><i class="icon-folder"></i> icon-folder</p>
+                    <p><i class="icon-film"></i> icon-film</p>
+                    <p><i class="icon-feed"></i> icon-feed</p>
+                    <p><i class="icon-drop"></i> icon-drop</p>
+                    <p><i class="icon-drawer"></i> icon-drawer</p>
+                    <p><i class="icon-docs"></i> icon-docs</p>
+                    <p><i class="icon-doc"></i> icon-doc</p>
+                    <p><i class="icon-diamond"></i> icon-diamond</p>
+                    <p><i class="icon-cup"></i> icon-cup</p>
+                    <p><i class="icon-calculator"></i> icon-calculator</p>
+                    <p><i class="icon-bubbles"></i> icon-bubbles</p>
+                    <p><i class="icon-briefcase"></i> icon-briefcase</p>
+                    <p><i class="icon-book-open"></i> icon-book-open</p>
+                    <p><i class="icon-basket-loaded"></i> icon-basket-loaded</p>
+                    <p><i class="icon-basket"></i> icon-basket</p>
+                    <p><i class="icon-bag"></i> icon-bag</p>
+                    <p><i class="icon-crop"></i> icon-crop</p>
+                    <p><i class="icon-chemistry"></i> icon-chemistry</p>
+                    <p><i class="icon-speedometer"></i> icon-speedometer</p>
+                    <p><i class="icon-shield"></i> icon-shield</p>
+                  </div>
+                </div>
+
+                <div class="col-xl-3">
+                  <div class="component--icons">
+                    <p><i class="icon-action-undo"></i> icon-action-undo</p>
+                    <p><i class="icon-action-redo"></i> icon-action-redo</p>
+                    <p><i class="icon-wrench"></i> icon-wrench</p>
+                    <p><i class="icon-umbrella"></i> icon-umbrella</p>
+                    <p><i class="icon-trash"></i> icon-trash</p>
+                    <p><i class="icon-tag"></i> icon-tag</p>
+                    <p><i class="icon-support"></i> icon-support</p>
+                    <p><i class="icon-frame"></i> icon-frame</p>
+                    <p><i class="icon-size-fullscreen"></i> icon-size-fullscreen</p>
+                    <p><i class="icon-size-actual"></i> icon-size-actual</p>
+                    <p><i class="icon-shuffle"></i> icon-shuffle</p>
+                    <p><i class="icon-share-alt"></i> icon-share-alt</p>
+                    <p><i class="icon-share"></i> icon-share</p>
+                    <p><i class="icon-rocket"></i> icon-rocket</p>
+                    <p><i class="icon-question"></i> icon-question</p>
+                    <p><i class="icon-pie-chart"></i> icon-pie-chart</p>
+                    <p><i class="icon-pencil"></i> icon-pencil</p>
+                    <p><i class="icon-note"></i> icon-note</p>
+                    <p><i class="icon-loop"></i> icon-loop</p>
+                    <p><i class="icon-home"></i> icon-home</p>
+                    <p><i class="icon-grid"></i> icon-grid</p>
+                    <p><i class="icon-graph"></i> icon-graph</p>
+                    <p><i class="icon-microphone"></i> icon-microphone</p>
+                    <p><i class="icon-music-tone-alt"></i> icon-music-tone-alt</p>
+                    <p><i class="icon-music-tone"></i> icon-music-tone</p>
+                    <p><i class="icon-earphones-alt"></i> icon-earphones-alt</p>
+                    <p><i class="icon-earphones"></i> icon-earphones</p>
+                    <p><i class="icon-like"></i> icon-like</p>
+                    <p><i class="icon-dislike"></i> icon-dislike</p>
+                    <p><i class="icon-control-start"></i> icon-control-start</p>
+                    <p><i class="icon-control-rewind"></i> icon-control-rewind</p>
+                    <p><i class="icon-control-play"></i> icon-control-play</p>
+                    <p><i class="icon-control-pause"></i> icon-control-pause</p>
+                    <p><i class="icon-control-forward"></i> icon-control-forward</p>
+                    <p><i class="icon-control-end"></i> icon-control-end</p>
+                    <p><i class="icon-volume-1"></i> icon-volume-1</p>
+                    <p><i class="icon-volume-2"></i> icon-volume-2</p>
+                    <p><i class="icon-volume-off"></i> icon-volume-off</p>
+                    <p><i class="icon-calendar"></i> icon-calendar</p>
+                    <p><i class="icon-bulb"></i> icon-bulb</p>
+                    <p><i class="icon-chart"></i> icon-chart</p>
+                    <p><i class="icon-ban"></i> icon-ban</p>
+                    <p><i class="icon-cursor-move"></i> icon-cursor-move</p>
+                    <p><i class="icon-power"></i> icon-power</p>
+                    <p><i class="icon-refresh"></i> icon-refresh</p>
+                    <p><i class="icon-reload"></i> icon-reload</p>
+                  </div>
+                </div>
+
+                <div class="col-xl-3">
+                  <div class="component--icons">
+                    <p><i class="icon-bubble"></i> icon-bubble</p>
+                    <p><i class="icon-camrecorder"></i> icon-camrecorder</p>
+                    <p><i class="icon-camera"></i> icon-camera</p>
+                    <p><i class="icon-cloud-download"></i> icon-cloud-download</p>
+                    <p><i class="icon-cloud-upload"></i> icon-cloud-upload</p>
+                    <p><i class="icon-envelope"></i> icon-envelope</p>
+                    <p><i class="icon-eye"></i> icon-eye</p>
+                    <p><i class="icon-flag"></i> icon-flag</p>
+                    <p><i class="icon-heart"></i> icon-heart</p>
+                    <p><i class="icon-info"></i> icon-info</p>
+                    <p><i class="icon-key"></i> icon-key</p>
+                    <p><i class="icon-link"></i> icon-link</p>
+                    <p><i class="icon-lock"></i> icon-lock</p>
+                    <p><i class="icon-lock-open"></i> icon-lock-open</p>
+                    <p><i class="icon-magnifier"></i> icon-magnifier</p>
+                    <p><i class="icon-magnifier-add"></i> icon-magnifier-add</p>
+                    <p><i class="icon-magnifier-remove"></i> icon-magnifier-remove</p>
+                    <p><i class="icon-paper-clip"></i> icon-paper-clip</p>
+                    <p><i class="icon-paper-plane"></i> icon-paper-plane</p>
+                    <p><i class="icon-settings"></i> icon-settings</p>
+                    <p><i class="icon-star"></i> icon-star</p>
+                    <p><i class="icon-symbol-female"></i> icon-symbol-female</p>
+                    <p><i class="icon-symbol-male"></i> icon-symbol-male</p>
+                    <p><i class="icon-target"></i> icon-target</p>
+                    <p><i class="icon-credit-card"></i> icon-credit-card</p>
+                    <p><i class="icon-paypal"></i> icon-paypal</p>
+                    <p><i class="icon-social-tumblr"></i> icon-social-tumblr</p>
+                    <p><i class="icon-social-twitter"></i> icon-social-twitter</p>
+                    <p><i class="icon-social-facebook"></i> icon-social-facebook</p>
+                    <p><i class="icon-social-instagram"></i> icon-social-instagram</p>
+                    <p><i class="icon-social-linkedin"></i> icon-social-linkedin</p>
+                    <p><i class="icon-social-pinterest"></i> icon-social-pinterest</p>
+                    <p><i class="icon-social-github"></i> icon-social-github</p>
+                    <p><i class="icon-social-google"></i> icon-social-google</p>
+                    <p><i class="icon-social-reddit"></i> icon-social-reddit</p>
+                    <p><i class="icon-social-skype"></i> icon-social-skype</p>
+                    <p><i class="icon-social-dribbble"></i> icon-social-dribbble</p>
+                    <p><i class="icon-social-behance"></i> icon-social-behance</p>
+                    <p><i class="icon-social-foursqare"></i> icon-social-foursqare</p>
+                    <p><i class="icon-social-soundcloud"></i> icon-social-soundcloud</p>
+                    <p><i class="icon-social-spotify"></i> icon-social-spotify</p>
+                    <p><i class="icon-social-stumbleupon"></i> icon-social-stumbleupon</p>
+                    <p><i class="icon-social-youtube"></i> icon-social-youtube</p>
+                    <p><i class="icon-social-dropbox"></i> icon-social-dropbox</p>
+                    <p><i class="icon-social-vkontakte"></i> icon-social-vkontakte</p>
+                    <p><i class="icon-social-steam"></i> icon-social-steam</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Usunąć <strong>1A</strong>?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-md btn-danger">Tak, usuwam</button>
+          <button type="button" class="btn-md btn-grey" data-dismiss="modal">Anuluj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
